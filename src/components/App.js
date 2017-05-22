@@ -1,8 +1,4 @@
-"use strict"
-
 import React from 'react'
-import _ from 'lodash'
-import Rebase from 're-base'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
@@ -12,14 +8,14 @@ import Routing from './Routing'
 
 import styles from '../App.css'
 
-const base = Rebase.createClass({
-  apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
-  authDomain: "behavioral-tracker-app.firebaseapp.com",
-  databaseURL: "https://behavioral-tracker-app.firebaseio.com",
-  projectId: "behavioral-tracker-app",
-  storageBucket: "behavioral-tracker-app.appspot.com",
-  messagingSenderId: "119916788968"
-}, 'behavioral-tracker-app')
+// const base = Rebase.createClass({
+//   apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
+//   authDomain: "behavioral-tracker-app.firebaseapp.com",
+//   databaseURL: "https://behavioral-tracker-app.firebaseio.com",
+//   projectId: "behavioral-tracker-app",
+//   storageBucket: "behavioral-tracker-app.appspot.com",
+//   messagingSenderId: "119916788968"
+// }, 'behavioral-tracker-app')
 
 
 export default class App extends React.Component {
@@ -217,7 +213,7 @@ console.log("revisedStudents is/are: ", revisedStudents);
           </div>
 
           <div className="footer">
-          <a href="https://github.com/CaptRat-tiy/Behavioral-Tracker">https://github.com/CaptRat-tiy/Behavioral-Tracker</a>
+          <a href="https://github.com/CaptRat-tiy/behav-tracker2">https://github.com/CaptRat-tiy/Behavioral-Tracker</a>
           </div>
         </div>
       </div>
