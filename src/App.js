@@ -4,7 +4,7 @@ import _ from 'lodash';
 import headerGif from './images/headerGifs/fingerman.gif';
 import './App.css';
 import Student from './components/Student'
-// import Behaviors from './/componentsBehaviors'
+import Behaviors from './components/Behaviors'
 import Analytics from './components/Analytics'
 // import About from './About'
 // import Routing from './Routing'
@@ -77,7 +77,6 @@ class App extends Component {
     console.log(revisedStudents);
     this.setState({students: revisedStudents})
   }
-
 
   render(){
     const students=this.state.courses.courseID.students
