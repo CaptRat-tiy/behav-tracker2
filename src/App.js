@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
 import base from 're-base';
 import _ from 'lodash';
-import headerGif from './images/headerGifs/fingerman.gif';
-import './App.css';
+
+import * as firebase from 'firebase'
+
 import Student from './components/Student'
 import Behaviors from './components/Behaviors'
 import Analytics from './components/Analytics'
 // import About from './About'
 // import Routing from './Routing'
+import './App.css';
 
+import headerGif from './images/headerGifs/fingerman.gif';
+
+
+var config = {
+    apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
+    authDomain: "behavioral-tracker-app.firebaseapp.com",
+    databaseURL: "https://behavioral-tracker-app.firebaseio.com",
+    projectId: "behavioral-tracker-app",
+    storageBucket: "behavioral-tracker-app.appspot.com",
+    messagingSenderId: "119916788968"
+  };
+
+firebase.initializeApp(config);
 
 class App extends Component {
   constructor(){

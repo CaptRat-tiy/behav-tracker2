@@ -1,8 +1,6 @@
 import React from 'react'
 import _ from 'lodash'
 
-
-
 export default class Behaviors extends React.Component{
 render() {
 

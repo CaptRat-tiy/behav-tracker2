@@ -5,5 +5,5 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 // import Routing from './components/Routing'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('app'));
 registerServiceWorker();

@@ -7,48 +7,44 @@ import About from './About'
 import Routing from './Routing'
 
 
-// const base = Rebase.createClass({
-//   apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
-//   authDomain: "behavioral-tracker-app.firebaseapp.com",
-//   databaseURL: "https://behavioral-tracker-app.firebaseio.com",
-//   projectId: "behavioral-tracker-app",
-//   storageBucket: "behavioral-tracker-app.appspot.com",
-//   messagingSenderId: "119916788968"
-// }, 'behavioral-tracker-app')
+const base = Rebase.createClass({
+  apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
+  authDomain: "behavioral-tracker-app.firebaseapp.com",
+  databaseURL: "https://behavioral-tracker-app.firebaseio.com",
+  projectId: "behavioral-tracker-app",
+  storageBucket: "behavioral-tracker-app.appspot.com",
+  messagingSenderId: "119916788968"
+}, 'behavioral-tracker-app')
 
 
 export default class App extends React.Component {
   constructor(){
     super()
 
-// local state
-
-
-// firebase-friendly
-//     this.state = {
-//       courseData: {},
-//       students: [],
-//       teacherInfo: {},
-//       behaviors: [],
-//     }
+    this.state = {
+      courseData: {},
+      students: [],
+      teacherInfo: {},
+      behaviors: [],
+    }
     this.generateGuid = this.generateGuid.bind(this)
     this.handleBehaviorClick = this.handleBehaviorClick.bind(this)
   }
 
-  // componentDidMount(){
-  //   base.syncState('courses', {
-  //     context: this,
-  //     state: 'courses',
-  //   })
-  //   base.syncState('behaviors', {
-  //     context: this,
-  //     state: 'behaviors',
-  //   })
-  // }
-  //
-  // componentWillUnmount(){
-  //   base.removeBinding(this.ref);
-  // }
+  componentDidMount(){
+    base.syncState('courses', {
+      context: this,
+      state: 'courses',
+    })
+    base.syncState('behaviors', {
+      context: this,
+      state: 'behaviors',
+    })
+  }
+
+  componentWillUnmount(){
+    base.removeBinding(this.ref);
+  }
 
   generateGuid(){
     const min = 0
