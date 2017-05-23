@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "lodash": "^4.17.4"
   },
+
   "devDependencies": {
+    "re-base": "^3.0.1",
     "react-scripts": "1.0.5"
   },
   "scripts": {
